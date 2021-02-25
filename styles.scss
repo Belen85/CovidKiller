@@ -1,0 +1,57 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 100%;
+  border: 1px black solid;
+  img {
+      display: block;
+      width: 200px; 
+      height: 200px;
+      margin: auto;
+  }
+
+}
+
+.card-empty {
+  height: 0px;
+  
+}
+
+
+
+$sm:640px;
+$md:768px;
+$lg:1024px;
+$xl: 1280px;
+
+@media only screen and (min-width:$md) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:$lg) {
+    .card {
+        width: 25%;
+    }
+}
